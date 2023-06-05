@@ -9,13 +9,21 @@
     border: 1px solid gray;
     width: 600px;
     margin: 10rem auto;
-    padding: 1.5rem 2rem;
+    /* padding: 1.5rem 2rem; */
     background: linear-gradient(to bottom right, rgb(0, 0, 0) 10%, rgb(209, 24, 24) 25%, rgb(0, 0, 0) 50%, rgb(209, 24, 24) 75%, rgb(0, 0, 0) 100%);
-    /* height: 200px; */
+    height: auto;
     border-radius: 10px;
     color: white;
 
     box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.atm {
+    position: relative;
+}
+
+.front-container {
+    padding: 1.5rem 2rem;
 }
 
 .card-top {
@@ -82,15 +90,15 @@
     display: flex;
     position: absolute;
     left: 80%;
-    top: -10px;
+    top: -20px;
 }
 
 .one {
-    background: rgb(160, 155, 155);
+    background: radial-gradient(rgb(160, 155, 155), rgb(95, 95, 95));
     width: 70px;
     height: 70px;
     display: block;
-    border-radius: 50%;
+    border-radius: 45%;
     opacity: 0.6;
 }
 
@@ -156,4 +164,90 @@
 
 .customer-name h3 {
     margin: 15px 0 0 20px;
+}
+
+
+
+/* ======================= BACK ===================== */
+
+.back {
+    position: absolute;
+    left: 23.5rem;
+    top: -10rem;
+    display: none;
+}
+
+.black {
+    width: 100%;
+    height: 70px;
+    background: #000;
+    margin-top: 2rem;
+}
+
+.back-middle {
+    padding: 0.5rem 1rem;
+}
+
+.signature {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5px;
+}
+
+.gray-backg {
+    background: gainsboro;
+    width: 80%;
+    height: 50px;
+    position: relative;
+}
+
+.gray-backg span {
+    position: absolute;
+    top: 10px;
+    left: 85%;
+    font-style: italic;
+    color: #000;
+    font-weight: 700;
+}
+
+.back-body p {
+    margin-top: 5px;
+    line-height: 1.2;
+    font-size: 0.95rem;
+}
+
+.back-logo {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-left: 35rem;
+    margin-bottom: -5rem;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2rem;
+    
+}
+
+.btn button {
+    width: 100px;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 3px solid #fff;
+    border-radius: 20px;
+}
+
+.on {
+    background: rgb(6, 255, 6);
+}
+
+.off {
+    background: rgb(255, 6, 39);
 }
