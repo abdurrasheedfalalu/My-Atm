@@ -4,11 +4,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 
 .container {
     border: 1px solid gray;
     width: 600px;
-    margin: 10rem auto;
+    /* margin: 10rem auto; */
     /* padding: 1.5rem 2rem; */
     background: linear-gradient(to bottom right, rgb(0, 0, 0) 10%, rgb(209, 24, 24) 25%, rgb(0, 0, 0) 50%, rgb(209, 24, 24) 75%, rgb(0, 0, 0) 100%);
     height: auto;
@@ -18,12 +25,13 @@
     box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-.atm {
-    position: relative;
-}
-
 .front-container {
     padding: 1.5rem 2rem;
+    transition: all 500ms ease;
+}
+
+.front-container:hover {
+    opacity: 0;
 }
 
 .card-top {
@@ -172,9 +180,8 @@
 
 .back {
     position: absolute;
-    left: 23.5rem;
-    top: -10rem;
-    display: none;
+    top: 8.7rem;
+    z-index: -11;
 }
 
 .black {
@@ -236,7 +243,7 @@
 }
 
 .btn button {
-    width: 100px;
+    width: 100%;
     padding: 1rem;
     font-size: 2rem;
     cursor: pointer;
@@ -246,8 +253,4 @@
 
 .on {
     background: rgb(6, 255, 6);
-}
-
-.off {
-    background: rgb(255, 6, 39);
 }
