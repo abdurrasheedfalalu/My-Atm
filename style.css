@@ -37,7 +37,7 @@ h1 {
 }
 
 .front-container {
-    padding: 1.5rem 2rem;
+    padding: 1.2rem 2rem;
     transition: all 500ms ease;
 }
 
@@ -304,4 +304,8 @@ h1 {
     cursor: pointer;
     border: 3px solid #fff;
     border-radius: 20px;
+}
+
+.on {
+    background: rgb(6, 255, 6);
 }
